@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout Pembelian</title>
+    <link rel="stylesheet" href="style-pembelian.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>    <script src="pembelian.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Checkout Gitar</h2>
+    <p><strong>Nama Gitar:</strong> <span id="NamaGitar">-</span></p>
+    <p><strong>Harga:</strong> Rp <span id="HargaGitar">-</span></p>
+
+    <label for="metode">Pilih Metode Pembayaran:</label>
+    <select id="metode">
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="COD">COD (Bayar di Tempat)</option>
+        <option value="e-Wallet">e-Wallet (OVO, DANA, dll)</option>
+    </select>
+
+    <button onclick="tampilkanStruk()">Lanjutkan & Lihat Struk</button>
+
+    <div id="struk" style="display:none; margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+        <h3>Struk Pembelian</h3>
+        <p>Nama Gitar: <span id="sNama">-</span></p>
+        <p>Harga: Rp <span id="sHarga">-</span></p>
+        <p>Metode Pembayaran: <span id="sMetode">-</span></p>
+        <p>Terima kasih atas pembelian Anda!</p>
+        <button onclick="downloadPDF()">Download Struk PDF</button>
+    </div>
+</div>
+
+
+</body>
+</html>
+

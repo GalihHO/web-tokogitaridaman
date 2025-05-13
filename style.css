@@ -1,0 +1,207 @@
+/* Reset dan Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #e9f0f4;
+    color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Medsos */
+.medsos {
+    padding: 10px 0;
+    background-color: #3f4c5a;
+}
+
+.medsos ul {
+    list-style: none;
+}
+
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+    color: #fbfcfd;
+    padding: 15px 0;
+    font-size: 22px;
+}
+
+header ul {
+    float: right;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 20px;
+    display: inline-block;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+header ul li a:hover,
+header ul li.active a {
+    background-color: #f90;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    height: 60vh;
+    background-image: url('Bannertoko.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner h2 {
+    color: #fff;
+    z-index: 1;
+    font-size: 28px;
+    padding: 20px 30px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+/* Section umum */
+section {
+    padding: 50px 0;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #021b13;
+}
+
+/* About section */
+.about p {
+    color: #333;
+    word-spacing: 2px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Label navigasi */
+.label {
+    background-color: #3f4c5a;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* LOGIN / REGISTER STYLE */
+
+.form-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d3aa2;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* TOMBOL SUBMIT UTAMA */
+.form-container input[type="submit"],
+.form-container button[type="submit"] {
+    padding: 14px;
+    background: #0d3aa2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container button[type="submit"]:hover {
+    background: #084a87;
+    transform: scale(1.03);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #0d3aa2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIF MOBILE */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
